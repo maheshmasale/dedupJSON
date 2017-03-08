@@ -1,0 +1,31 @@
+Data read from file - 
+{"leads":[
+{
+"id": "jkj238238jdsnfsj23",
+"email": "foo@bar.com",
+"firstName":  "John",
+"lastName": "Smith",
+"address": "123 Street St",
+"entryDate": "2014-05-32T17:30:20+00:00"
+},{
+"_id": "aisudahiuadnk129dsd",
+"mailId": "bog@bar.com",
+"firstName":  "Ted",
+"lastName": "Jolly",
+"address": "123 Street St",
+"entryDate": "2014-05-07T17:30:20+00:00"
+}]
+}
+
+Length of original leads array - 2
+
+Rejecting the record as the key is missing from the data.
+Rejecting the record as the key is missing from the data.
+
+Length of final leads array - 0
+
+
+Final Output after dedupication - 
+{
+  "leads": []
+}

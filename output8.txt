@@ -1,0 +1,48 @@
+Data read from file - 
+{"leads":[
+{
+"_id": "jkj238238jdsnfsj23",
+"email": "foo@bar.com",
+"firstName":  "John",
+"lastName": "Smith",
+"address": "123 Street St",
+"entryDate": "2014-05-03T17:30:20+00:00"
+},{
+"_id": "jkj238238jdsnfsj23",
+"email": "bog@bar.com",
+"firstName":  "John",
+"lastName": "Smith",
+"address": "123 Street St",
+"entryDate": "2014-05-03T17:30:20+00:00"
+}]
+}
+
+Length of original leads array - 2
+
+Retained record with id-jkj238238jdsnfsj23 and email-foo@bar.com.
+Retained record with id-jkj238238jdsnfsj23 and email-bog@bar.com.
+
+Length of final leads array - 2
+
+
+Final Output after dedupication - 
+{
+  "leads": [
+    {
+      "_id": "jkj238238jdsnfsj23",
+      "email": "foo@bar.com",
+      "firstName": "John",
+      "lastName": "Smith",
+      "address": "123 Street St",
+      "entryDate": "2014-05-03T17:30:20+00:00"
+    },
+    {
+      "_id": "jkj238238jdsnfsj23",
+      "email": "bog@bar.com",
+      "firstName": "John",
+      "lastName": "Smith",
+      "address": "123 Street St",
+      "entryDate": "2014-05-03T17:30:20+00:00"
+    }
+  ]
+}

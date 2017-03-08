@@ -1,0 +1,64 @@
+Data read from file - 
+{"leads":[
+{
+"_id": "jkj238238jdsnfsj23",
+"email": "foo@bar.com",
+"firstName":  "John",
+"lastName": "Smith",
+"address": "123 Street St",
+"entryDate": "2014-05-02T10:00:00+10:00"
+},{
+"_id": "jkj238238jdsnfsj23",
+"email": "foo@bar.com",
+"firstName":  "John1",
+"lastName": "Smith1",
+"address": "123 Street St",
+"entryDate": "2014-05-02T14:00:00+10:00"
+},{
+"_id": "jkj238238jdsnfsj23",
+"email": "foo@bar.com",
+"firstName":  "John2",
+"lastName": "Smith2",
+"address": "123 Street St2",
+"entryDate": "2014-05-02T12:30:20+10:00"
+},{
+"_id": "aisudahiuadnk129dsd",
+"email": "bog@bar.com",
+"firstName":  "Ted",
+"lastName": "Jolly",
+"address": "123 Street St",
+"entryDate": "2014-05-07T17:30:20+00:00"
+}]
+}
+
+Length of original leads array - 4
+
+Retained record with id-jkj238238jdsnfsj23 and email-foo@bar.com.
+Replaces previous record with id-jkj238238jdsnfsj23 and email-foo@bar.com, with current record. Since this one is latest.
+Rejected record with id-jkj238238jdsnfsj23 and email-foo@bar.com. Since it was already present in the data and this one is not latest.
+Retained record with id-aisudahiuadnk129dsd and email-bog@bar.com.
+
+Length of final leads array - 2
+
+
+Final Output after dedupication - 
+{
+  "leads": [
+    {
+      "_id": "jkj238238jdsnfsj23",
+      "email": "foo@bar.com",
+      "firstName": "John1",
+      "lastName": "Smith1",
+      "address": "123 Street St",
+      "entryDate": "2014-05-02T14:00:00+10:00"
+    },
+    {
+      "_id": "aisudahiuadnk129dsd",
+      "email": "bog@bar.com",
+      "firstName": "Ted",
+      "lastName": "Jolly",
+      "address": "123 Street St",
+      "entryDate": "2014-05-07T17:30:20+00:00"
+    }
+  ]
+}
