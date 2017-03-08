@@ -12,13 +12,21 @@ Used garbage collector to free up space. (in small scale this one won’t help m
 	Python deduplicateJSON.py leads.json
 	#Here you can replace leads.json file name with other file name and you can also provide path to that file. 
 8. Unit tests – This code is been tested for 9 different unit test cases. I have attached the unit test data and their output. The unit tests are for following cases – 
+
 	a.	Invalid dates in first occurrence
 	
 	b.	Invalid dates in second occurrence
+	
 	c.	Same Dates and time and time zone
+	
 	d.	Same Dates and different time and same time zone
+	
 	e.	Same Dates, time and different time zone
+	
 	f.	Different dates
+	
 	g.	Issue with the key, improper key or key not found
+	
 	h.	Same id but different email
+	
 	i.	Same email but different id
